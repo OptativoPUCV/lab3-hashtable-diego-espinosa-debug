@@ -90,3 +90,17 @@ Thu 07 Sep 2023 07:34:33 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 862b132
+Thu 07 Sep 2023 07:35:06 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:62:10: error: incompatible types when returning type ‘HashMap’ {aka ‘struct HashMap’} but ‘HashMap *’ {aka ‘struct HashMap *’} was expected
+   62 |   return *mapa;
+      |          ^~~~~
+hashmap.c:63:1: error: control reaches end of non-void function [-Werror=return-type]
+   63 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+48a1a52
