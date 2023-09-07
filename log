@@ -69,3 +69,13 @@ hashmap.c:60:17: error: assignment to ‘long int’ from ‘void *’ makes int
 cc1: all warnings being treated as errors
 Compilation failed
 fef14a7
+Thu 07 Sep 2023 07:34:09 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:57:3: error: expected ‘,’ or ‘;’ before ‘mapa’
+   57 |   mapa->buckets = NULL;
+      |   ^~~~
+Compilation failed
+ab154df
