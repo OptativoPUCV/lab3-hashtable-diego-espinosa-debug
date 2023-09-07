@@ -211,3 +211,13 @@ hashmap.c:43:8: error: unused variable ‘posicion’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d0b1970
+Thu 07 Sep 2023 07:51:14 PM UTC: 
+ hashmap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:9: error: expected expression before ‘)’ token
+   43 |   while()
+      |         ^
+Compilation failed
+f88cc17
