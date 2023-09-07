@@ -79,3 +79,9 @@ hashmap.c:57:3: error: expected ‘,’ or ‘;’ before ‘mapa’
       |   ^~~~
 Compilation failed
 ab154df
+Thu 07 Sep 2023 07:34:18 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+d70783d
