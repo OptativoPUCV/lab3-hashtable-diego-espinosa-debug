@@ -200,3 +200,14 @@ Thu 07 Sep 2023 07:40:59 PM UTC:
  tests:  1|5
 total_score: 10/70
 4bde390
+Thu 07 Sep 2023 07:47:55 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:8: error: unused variable ‘posicion’ [-Werror=unused-variable]
+   43 |   long posicion = hash(key,map->capacity);
+      |        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d0b1970
