@@ -133,3 +133,8 @@ hashmap.c:57:17: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 Compilation failed
 1af4a3f
+Thu 07 Sep 2023 07:37:17 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+090e03c
