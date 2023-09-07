@@ -242,3 +242,17 @@ hashmap.c:44:10: error: unused variable ‘posicion’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 749d65d
+Thu 07 Sep 2023 07:54:32 PM UTC: 
+ hashmap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:44:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘while’
+   44 |   while(map->buckets[posicion]->value != NULL){
+      |   ^~~~~
+hashmap.c:44:22: error: ‘posicion’ undeclared (first use in this function)
+   44 |   while(map->buckets[posicion]->value != NULL){
+      |                      ^~~~~~~~
+hashmap.c:44:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+04a5c3c
