@@ -119,3 +119,17 @@ Thu 07 Sep 2023 07:35:40 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 dfcccf9
+Thu 07 Sep 2023 07:36:52 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:57:19: error: dereferencing ‘void *’ pointer [-Werror]
+   57 |   mapa->buckets = *NULL;
+      |                   ^
+hashmap.c:57:17: error: void value not ignored as it ought to be
+   57 |   mapa->buckets = *NULL;
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+1af4a3f
