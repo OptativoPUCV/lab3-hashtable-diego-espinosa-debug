@@ -2,3 +2,31 @@ Thu 07 Sep 2023 07:21:32 PM UTC:
  tests:  0|6
 total_score: 0/70
 c716bce
+Thu 07 Sep 2023 07:32:44 PM UTC: 
+ hashmap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:55:3: error: unknown type name ‘hashmap’; did you mean ‘HashMap’?
+   55 |   hashmap mapa = (hashmap*) malloc(sizeof(hasmap))
+      |   ^~~~~~~
+      |   HashMap
+hashmap.c:55:19: error: ‘hashmap’ undeclared (first use in this function); did you mean ‘HashMap’?
+   55 |   hashmap mapa = (hashmap*) malloc(sizeof(hasmap))
+      |                   ^~~~~~~
+      |                   HashMap
+hashmap.c:55:19: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:55:27: error: expected expression before ‘)’ token
+   55 |   hashmap mapa = (hashmap*) malloc(sizeof(hasmap))
+      |                           ^
+hashmap.c:58:7: error: invalid type argument of ‘->’ (have ‘int’)
+   58 |   mapa->size = NULL;
+      |       ^~
+hashmap.c:59:7: error: invalid type argument of ‘->’ (have ‘int’)
+   59 |   mapa->capacity = capacity;
+      |       ^~
+hashmap.c:60:7: error: invalid type argument of ‘->’ (have ‘int’)
+   60 |   mapa->current = NULL;
+      |       ^~
+Compilation failed
+05ad7dd
