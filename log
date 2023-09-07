@@ -227,3 +227,18 @@ Thu 07 Sep 2023 07:51:21 PM UTC:
  tests:  1|5
 total_score: 10/70
 71c07b8
+Thu 07 Sep 2023 07:53:12 PM UTC: 
+ hashmap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:22: error: ‘posicion’ undeclared (first use in this function)
+   43 |   while(map->buckets[posicion] != NULL){
+      |                      ^~~~~~~~
+hashmap.c:43:22: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:44:10: error: unused variable ‘posicion’ [-Werror=unused-variable]
+   44 |     long posicion = hash(key,map->capacity);
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+749d65d
