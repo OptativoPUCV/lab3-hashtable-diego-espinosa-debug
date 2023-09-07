@@ -30,3 +30,25 @@ hashmap.c:60:7: error: invalid type argument of ‘->’ (have ‘int’)
       |       ^~
 Compilation failed
 05ad7dd
+Thu 07 Sep 2023 07:33:10 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:55:18: error: invalid initializer
+   55 |   HashMap mapa = (HashMap*) malloc(sizeof(HashMap))
+      |                  ^
+hashmap.c:57:3: error: expected ‘,’ or ‘;’ before ‘mapa’
+   57 |   mapa->buckets = NULL;
+      |   ^~~~
+hashmap.c:58:7: error: invalid type argument of ‘->’ (have ‘HashMap’ {aka ‘struct HashMap’})
+   58 |   mapa->size = NULL;
+      |       ^~
+hashmap.c:59:7: error: invalid type argument of ‘->’ (have ‘HashMap’ {aka ‘struct HashMap’})
+   59 |   mapa->capacity = capacity;
+      |       ^~
+hashmap.c:60:7: error: invalid type argument of ‘->’ (have ‘HashMap’ {aka ‘struct HashMap’})
+   60 |   mapa->current = NULL;
+      |       ^~
+Compilation failed
+c3305b4
