@@ -267,3 +267,14 @@ hashmap.c:44:21: error: ‘posicion’ is used uninitialized [-Werror=uninitiali
 cc1: all warnings being treated as errors
 Compilation failed
 7561454
+Thu 07 Sep 2023 07:55:47 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:44:21: error: ‘posicion’ is used uninitialized [-Werror=uninitialized]
+   44 |   while(map->buckets[posicion] != NULL){
+      |                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+255ecea
