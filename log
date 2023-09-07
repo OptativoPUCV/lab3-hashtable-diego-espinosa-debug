@@ -104,3 +104,13 @@ hashmap.c:63:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 48a1a52
+Thu 07 Sep 2023 07:35:28 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:57:19: error: expected expression before ‘[’ token
+   57 |   mapa->buckets = [NULL][NULL];
+      |                   ^
+Compilation failed
+0160e98
