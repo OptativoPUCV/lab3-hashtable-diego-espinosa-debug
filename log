@@ -479,3 +479,26 @@ Fri 08 Sep 2023 11:06:36 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ab37724
+Fri 08 Sep 2023 11:15:06 PM UTC: 
+ hashmap.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:60:21: error: ‘posicion’ undeclared (first use in this function)
+   60 |     if(map->buckets[posicion] != NULL || map->buckets[posicion]->key != NULL))
+      |                     ^~~~~~~~
+hashmap.c:60:21: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:60:78: error: expected statement before ‘)’ token
+   60 |     if(map->buckets[posicion] != NULL || map->buckets[posicion]->key != NULL))
+      |                                                                              ^
+hashmap.c:62:39: error: expected expression before ‘]’ token
+   62 |       auxBuckets[cont] = map->buckets[];
+      |                                       ^
+hashmap.c:69:10: error: redeclaration of ‘auxBuckets’ with no linkage
+   69 |   Pair** auxBuckets = map->buckets;
+      |          ^~~~~~~~~~
+hashmap.c:56:10: note: previous declaration of ‘auxBuckets’ with type ‘Pair **’
+   56 |   Pair** auxBuckets;
+      |          ^~~~~~~~~~
+Compilation failed
+f29d47c
