@@ -70,7 +70,20 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {    
+  long posicion = hash(key,map->capacity);
 
+  while(strcmp(map->buckets[posicion]->key,key) != 0)
+  {
+    posicion = (posicion + 1) % map->capacity;
+    if(map->buckets[posicion] == NULL)
+    {
+      return NULL;
+    }
+  }
+
+  map->capacity--;
+
+  map->buckets[posicion]->key = NULL;
 
 }
 
