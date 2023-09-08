@@ -77,7 +77,7 @@ void eraseMap(HashMap * map,  char * key) {
     posicion = (posicion + 1) % map->capacity;
     if(map->buckets[posicion] == NULL)
     {
-      break;
+      return;
     }
   }
 
