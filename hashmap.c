@@ -73,6 +73,7 @@ void enlarge(HashMap * map) {
   for(int i = 0; i < cont; i++)
   {
     insertMap(map,auxBuckets[i]->key,auxBuckets[i]->value);
+    map->size++;
   }
 
 }
