@@ -579,3 +579,8 @@ hashmap.c:75:51: error: ‘*auxBuckets[i]’ is a pointer; did you mean to use �
 cc1: all warnings being treated as errors
 Compilation failed
 825b87d
+Fri 08 Sep 2023 11:20:39 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+1d5a613
