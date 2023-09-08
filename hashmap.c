@@ -120,7 +120,7 @@ Pair * nextMap(HashMap * map) {
 
   while(map->buckets[posicion] == NULL || map->buckets[posicion]->key == NULL){
     posicion = posicion + 1;
-    if(posicion >= map->size)
+    if(posicion >= map->capacity)
     {
       return NULL;
     }
