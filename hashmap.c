@@ -106,7 +106,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
   long posicion = 0;
 
-  while(map->buckets[posicion]->key == NULL){
+  while(map->buckets[posicion] == NULL || map->buckets[posicion]->key == NULL){
     posicion = (posicion + 1) % map->capacity;
   }
 
