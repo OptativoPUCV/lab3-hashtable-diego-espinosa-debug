@@ -72,10 +72,11 @@ void enlarge(HashMap * map) {
 
   for(int i = 0; i < map->capacity; i++)
   {
-    if(auxBuckets[i] != NULL || auxBuckets[i]->key != NULL)
+    if(auxBuckets[i] == NULL || auxBuckets[i]->key == NULL)
     {
-      insertMap(map,auxBuckets[i]->key,auxBuckets[i]->value);
+      continue;
     }
+    insertMap(map,auxBuckets[i]->key,auxBuckets[i]->value);
   }
 
 }
