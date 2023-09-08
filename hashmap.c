@@ -54,7 +54,6 @@ void insertMap(HashMap * map, char * key, void * value) {
 void enlarge(HashMap * map) {
   enlarge_called = 1; //no borrar (testing purposes)
   Pair** auxBuckets = (Pair**)calloc(map->capacity, sizeof(Pair*));
-  //auxBuckets = map->buckets;
   int cont = 0;
   for(int i = 0; i < map->capacity; i++)
   {
