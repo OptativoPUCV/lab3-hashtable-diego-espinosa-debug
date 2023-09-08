@@ -544,3 +544,14 @@ hashmap.c:75:51: error: invalid type argument of ‘->’ (have ‘Pair’)
       |                                                   ^~
 Compilation failed
 38c0ef2
+Fri 08 Sep 2023 11:19:39 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:62:17: error: ‘auxBuckets’ may be used uninitialized [-Werror=maybe-uninitialized]
+   62 |       auxBuckets[cont] = map->buckets[i];
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+7df53e2
