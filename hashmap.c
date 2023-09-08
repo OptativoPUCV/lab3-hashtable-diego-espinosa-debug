@@ -60,9 +60,8 @@ void enlarge(HashMap * map) {
     if(map->buckets[i] != NULL || map->buckets[i]->key != NULL)
     {
       auxBuckets[cont] = map->buckets[i];
+      cont++;
     }
-
-    cont++;
   }
   
   
