@@ -79,11 +79,11 @@ Pair * searchMap(HashMap * map,  char * key) {
   
   while(strcmp(map->buckets[posicion]->key,key) != 0)  
   {
+    posicion = (posicion + 1) % map->capacity;
     if(map->buckets[posicion] == NULL)
     {
       return NULL;
     }
-    posicion = (posicion + 1) % map->capacity;
   }
 
   map->current = posicion;
