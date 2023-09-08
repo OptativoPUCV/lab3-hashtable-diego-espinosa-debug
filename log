@@ -528,3 +528,19 @@ Fri 08 Sep 2023 11:16:59 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 f2ecc0b
+Fri 08 Sep 2023 11:19:22 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:62:26: error: incompatible types when assigning to type ‘Pair’ from type ‘Pair *’
+   62 |       auxBuckets[cont] = map->buckets[i];
+      |                          ^~~
+hashmap.c:75:32: error: invalid type argument of ‘->’ (have ‘Pair’)
+   75 |     insertMap(map,auxBuckets[i]->key,auxBuckets[i]->value);
+      |                                ^~
+hashmap.c:75:51: error: invalid type argument of ‘->’ (have ‘Pair’)
+   75 |     insertMap(map,auxBuckets[i]->key,auxBuckets[i]->value);
+      |                                                   ^~
+Compilation failed
+38c0ef2
