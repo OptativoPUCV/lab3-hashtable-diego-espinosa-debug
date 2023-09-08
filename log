@@ -502,3 +502,13 @@ hashmap.c:56:10: note: previous declaration of ‘auxBuckets’ with type ‘Pai
       |          ^~~~~~~~~~
 Compilation failed
 f29d47c
+Fri 08 Sep 2023 11:15:47 PM UTC: 
+ hashmap.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:60:64: error: expected statement before ‘)’ token
+   60 |     if(map->buckets[i] != NULL || map->buckets[i]->key != NULL))
+      |                                                                ^
+Compilation failed
+198d5c0
